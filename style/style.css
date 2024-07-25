@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(41, 41, 43);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 750px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.up-circle{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.circle-one{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(239, 91, 227);
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    box-shadow: inset -80px -15px 70px 5px #fdfdfd;
+    animation-name: example1;
+    animation-duration: 10s;
+}
+
+@keyframes example1 {
+    from {background-color: rgb(248, 195, 142);}
+    to {background-color: rgb(234, 161, 161);}
+    to {background-color: rgb(103, 7, 7);}
+    to {background-color: rgb(226, 120, 217)}
+  }
+.card{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.credit-card{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(25, 24, 24, 0.5);
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    /* filter: blur(2px);  */
+    display: flex;
+    flex-direction: column;
+}
+.up{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+}
+.up-left{
+    width: 50%;
+    height: 100%;
+}
+.name{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    color:#fff;
+}
+
+.image{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+    left: 120px;
+}
+
+.up-right{
+    width: 50%;
+    height: 100%;
+}
+
+.center{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+.up-cenetr{
+    padding: 5px 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#fff;
+}
+
+.down-center{
+    position: relative;
+    left: 22px;
+    bottom:5px;
+    font-size:25px;
+    color:#fff;
+}
+.down{
+    width: 100%;
+    height: 35%;
+    /* background-color: crimson; */
+}
+.down-circle{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.circle-two{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(226, 120, 217);
+    border-radius: 50%;
+    position: relative;
+    bottom: 120px;
+    right: 50px;
+    box-shadow: inset 80px 15px 70px 5px #fdfdfd;
+    animation-name: example2;
+    animation-duration: 10s;
+}
+
+
+@keyframes example2 {
+    from {background-color: rgb(248, 195, 142);}
+    to {background-color: rgb(234, 161, 161);}
+    to {background-color: rgb(103, 7, 7);}
+    to {background-color: rgb(226, 120, 217)}
+  }
+
+  .paragraph{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    left: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+pre{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+    left: 250px;
+}
